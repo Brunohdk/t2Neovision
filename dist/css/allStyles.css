@@ -1,0 +1,491 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-family: "Roboto Cn", sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+header{
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(to bottom, #764C94 , #553875, #321B5E);
+	background-size: cover;
+	position: relative;
+  overflow: hidden;
+}
+
+.container{
+	max-width: 200rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.menu-toggle{
+	position: fixed;
+	top: 2.5rem;
+	right: 2.5rem;
+	color: #eeeeee;
+	font-size: 3rem;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+
+nav{
+	padding-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+
+.brand{
+	padding-top: 1.3rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	padding-bottom: 0.6rem;
+	box-shadow: 0px 0.4px 0.4px 0.4px #212121;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+	background-color: #764C94;
+}
+
+.neovisionLogo{
+	height: 100px;
+	width: 200px;
+}
+
+.fbLogo{
+	width: 34px;
+	height: 32px;
+	border-radius: 4px;
+}
+
+.liFbLogo{
+	position: relative;
+	top: -8px;
+}
+
+nav ul{
+	display: flex;
+	padding-top: 2rem;
+}
+
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing: 0.7px;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #F89734;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+
+.liFbLogo::before,
+.liFbLogo::after{
+	display: none;
+}
+
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,.95);
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	transition: opacity 650ms;
+	transform: scale(0);
+	opacity: 0;
+  display: none;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+
+section{
+	display: flex;
+}
+
+.leftSide{
+	margin-top: 28px;
+}
+
+.rightSide{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	margin: 0 auto;
+}
+
+.rightSide h1{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 100;
+	color: #FFFF;
+	margin-bottom: 5px;
+	position: relative;
+	left: -25px;
+}
+
+.rightSide span{
+	font-size: 4.5rem;
+	color: white;
+	font-weight: 500;
+	margin-bottom: 10rem;
+	position: relative;
+	left: -25px;
+}
+
+main{
+	background-image: url('../img/curva.svg') ;
+	background-size: 100%;
+}
+
+.secondSection{
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.secondSectionTitle{
+	margin: 2rem 0;
+	color: #F89734;
+	font-size: 34px;
+	font-weight: 650;
+	line-height: 1px;
+}
+
+.secondSectionImg{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.articleText{
+	width: 45%;
+	margin: 1rem;
+}
+
+.ulMain{
+	margin-top:5rem;
+}
+
+.contact{
+	background-color: #F89734;
+	padding: 3.5rem 0;
+}
+
+.h1Contact{
+	color: #FFFF;
+	font-size: 2.7rem;
+	font-weight: 300;
+}
+
+form{
+	margin: 22px 0;
+}
+
+
+form input{
+	outline: none;
+	border: none;
+	height: 40px;
+    border-radius: 17px;
+	padding: 29px 22px;
+	margin-right: 1.5rem;
+	width: 35%;
+}
+
+input::placeholder{
+	font-size: 22px;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+form button{
+	background-color: #321B5E;
+	color: #FFFF;
+	border-radius: 20px;
+	padding: 16.8px 28px;
+	border: none;
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+footer{
+	padding: 2.5rem;
+	background-color : #321B5E;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+footer span{
+	font-size: 17px;
+}
+
+
+.leftSide img {
+	display: flex;
+	align-items: flex-end;
+	width: 810px;
+	height: auto;
+}
+
+@media screen and (max-width: 1500px){
+
+	.rightSide h1{
+		font-size: 2.28rem;
+	}
+
+	.rightSide span{
+		font-size: 3.69rem;
+	}
+
+	.leftSide img{
+		width: 668px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+
+	.rightSide h1{
+		font-size: 2rem;
+	}
+
+	.rightSide span{
+		font-size: 3.2rem;
+		margin-bottom: 8rem;
+	}
+
+	.leftSide img{
+		width: 520px;
+	}
+}
+
+
+@media screen and (max-width: 998px){
+
+	.rightSide h1{
+		font-size: 1.7rem;
+	}
+
+	.rightSide span{
+		font-size: 2.85rem;
+		margin-bottom: 5rem;
+	}
+
+	.leftSide img{
+		width: 470px;
+	}
+
+	.brand{
+		padding-top: 0.5rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-bottom: 0.3rem;
+	}
+
+	.neovisionLogo{
+		height: 70px;
+		width: 140px;
+	}
+
+	nav ul{
+		padding-top: 1rem;
+	}
+
+	nav ul li a{
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 883px){
+
+	.rightSide h1{
+		font-size: 1.5rem;
+	}
+
+	.rightSide span{
+		font-size: 2.5rem;
+		margin-bottom: 4rem;
+	}
+
+	.leftSide img{
+		width: 400px;
+	}
+}
+	
+@media screen and (max-width: 768px){
+
+	.rightSide h1{
+		font-size: 1.2rem;
+	}
+
+	.rightSide span{
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.leftSide img{
+		width: 330px;
+	}
+
+	.menu-toggle{
+		display: block;
+	}
+
+	nav{
+		padding-top: 3rem;
+		display: none;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100vh;
+		text-align: center;
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav ul li{
+		margin-top: 2.2rem;
+	}
+
+	nav ul li a{
+		margin: 0;
+		font-size: 1.5rem;
+	}
+
+  .overlay.menu-open,
+  nav.menu-open{
+	  display: flex;
+	  transform: scale(1);
+	  opacity: 1;
+  }
+
+  .neovisionLogo{
+	  height: 80px;
+	  width: 160px;
+  }
+
+  .hamburgerIcon{
+	  color:#F89734
+  }
+  
+}
+
+@media only screen and (max-width : 624px) {
+ 
+	.rightSide h1{
+		font-size: 0.9rem;
+	}
+
+	.rightSide span{
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.leftSide img{
+		width: 250px;
+	}
+
+	nav{
+		padding-top: 1.9rem;
+	}
+
+	nav ul li{
+		margin-top: 1.5rem;
+	}
+
+	nav ul li a{
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+ 
+	.rightSide h1{
+		font-size: 0.8rem;
+	}
+
+	.rightSide span{
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+
+	.leftSide img{
+		width: 200px;
+	}
+}
