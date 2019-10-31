@@ -195,7 +195,7 @@ section{
 }
 
 .rightSide span{
-	font-size: 4.5rem;
+	font-size: 4rem;
 	color: white;
 	font-weight: 500;
 	margin-bottom: 10rem;
@@ -297,7 +297,7 @@ footer span{
 .leftSide img {
 	display: flex;
 	align-items: flex-end;
-	width: 810px;
+	width: 1070px;
 	height: auto;
 }
 
