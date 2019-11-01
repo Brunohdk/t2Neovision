@@ -8,12 +8,12 @@
     const formInputsEl = form.querySelectorAll('input')
     const contactEl = doc.getElementById('contact');
     const FeaturesEl = doc.getElementById('features');
+    const icon = doc.querySelector('.menu-toggle i');
     
     openEl.addEventListener("click", function(){
     
         let overlay = doc.querySelector('.overlay');
         let nav = doc.querySelector('nav');
-        let icon = doc.querySelector('.menu-toggle i');
     
         overlay.classList.toggle("menu-open");
         nav.classList.toggle("menu-open");
@@ -31,16 +31,30 @@
         }
     });
 
-    function ScrollToContact(){
+    function scrollToContact(e){
 
-        contactEl.scrollIntoView()
-        console.log(contactEl)
+        e.preventDefault();
+        if(!changeIcon)
+            icon.click()
+        
+        contactEl.scrollIntoView({behavior: "smooth"});
     }
-    contactButton.addEventListener('click', ScrollToContact);
 
-    featuresButton.addEventListener('click', function(){
-        FeaturesEl.scrollIntoView();
-    })
+    function scrollToFeatures(e){
+
+        e.preventDefault();
+        if(!changeIcon)
+            icon.click()
+        
+        FeaturesEl.scrollIntoView({behavior: "smooth"});
+    }
+
+
+    contactButton.addEventListener('click', scrollToContact);
+
+    featuresButton.addEventListener('click', scrollToFeatures);
+
+
     
     
     formEl.addEventListener('submit', function(e) {

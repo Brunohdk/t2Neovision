@@ -77,10 +77,6 @@ nav{
 	top: -8px;
 }
 
-.hamburgerIcon{
-	color: red;
-}
-
 nav ul{
 	display: flex;
 	padding-top: 2rem;
@@ -209,45 +205,85 @@ section{
 
 main{
 	background-image: url('../img/layout/wavyBackground.svg');
-	background-size: 100%;
-	width: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+	position: relative;
 }
 
 .secondSection{
 	display: flex;
 	flex-direction: column;
-	margin-top: 2rem;
+	margin-top: 4.2rem;
+	position: relative;
 }
 
 .secondSectionTitle{
-	margin: 2rem 0;
+	margin: 4rem 0;
 	color: #F89734;
-	font-size: 43px;
+	font-size: 4.2rem;
 	font-weight: 650;
 	line-height: 1px;
 }
 
-#secondSectionImgDiv{
-	position: relative;
+
+#a{
+
+}
+
+#b{
+
+}
+
+#c{
+	margin-top: 13rem;
+	margin-bottom: 5rem;
+}
+
+#d{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 810px;
+	height: 1070px;
+}
+
+#d img{
+	right: 0;
+	width: 810px;
+	height: 1070px;
 }
 
 
 .articleText{
-	width: 45%;
-	margin: 1rem;
+	width: 55%;
+	margin-top: 1.7rem;
 }
 
 .articleTextP{
-	font-size: 25px;
+	font-size: 1.6rem;
+	color: #666666;
 }
 
-.ulMain{
-	margin-top:15rem;
-}
 
 .ulMain li{
-	font-size: 35px;
-	margin: 120px 0;
+	font-size: 2.9rem;
+	margin: 3.8rem 0;
+	color: #FFFF;
+	list-style: none;
+}
+
+.ulMain li span{
+	position: relative;
+	bottom: 10px;
+}
+
+#featuresIcon{
+	color: #F89734;
+	font-size: 75px;
+	margin-right: 25px;
 }
 
 .contact{
@@ -326,6 +362,37 @@ footer span{
 	.leftSide img {
 		width: 780px
 	}
+
+	.secondSection{
+		margin-top: 3.7rem;
+	}
+
+	.secondSectionTitle{
+		margin: 3.5rem 0;
+	}
+
+	.articleTextP{
+		font-size: 1.4rem;
+	}
+
+	.ulMain li{
+		font-size: 2.6rem;
+		margin: 3rem 0;
+	}
+
+	#c{
+		margin-top: 12.5rem;
+	}
+
+	#d{
+		width: 745px;
+		height: 983px;
+	}
+
+	#d img{
+		width: 745px;
+		height: 983px;
+	}
 }
 
 @media screen and (max-width: 1500px){
@@ -335,12 +402,50 @@ footer span{
 	}
 
 	.rightSide span{
-		font-size: 3.69rem;
+		font-size: 3.67rem;
 	}
 
 	.leftSide img{
 		width: 668px;
 	}
+
+	.secondSection{
+		margin-top: 3.4rem;
+	}
+
+	.secondSectionTitle{
+		margin: 3rem 0;
+		font-size: 3.3rem;
+	}
+
+	.articleTextP{
+		font-size: 1.2rem;
+	}
+
+	.ulMain li{
+		font-size: 2.1rem;
+		margin: 2.8rem 0;
+	}
+
+	#featuresIcon{
+		font-size: 60px;
+	}
+
+	#c{
+		margin-top: 8rem;
+		margin-bottom: 1rem;
+	}
+
+	#d{
+		width: 600px;
+		height: 792px;
+	}
+
+	#d img{
+		width: 600px;
+		height: 792px;
+	}
+
 }
 
 @media screen and (max-width: 1200px){
@@ -350,12 +455,53 @@ footer span{
 	}
 
 	.rightSide span{
-		font-size: 3.2rem;
+		font-size: 3.15rem;
 		margin-bottom: 8rem;
 	}
 
 	.leftSide img{
 		width: 520px;
+	}
+
+	.secondSection{
+		margin-top: 2.4rem;
+	}
+
+	.secondSectionTitle{
+		margin: 2.2rem 0;
+		font-size: 2.6rem;
+	}
+
+	.articleText{
+		margin-top: 1.1rem;
+	}
+
+	.articleTextP{
+		font-size: 1.1rem;
+	}
+
+	.ulMain li{
+		font-size: 1.9rem;
+		margin: 2rem 0;
+	}
+
+	#featuersIcon{
+		font-size: 35px;
+	}
+
+	#c{
+		margin-top: 5.5rem;
+		margin-bottom: 0rem;
+	}
+
+	#d{
+		width: 480px;
+		height: 633px;
+	}
+
+	#d img{
+		width: 480px;
+		height: 633px;
 	}
 }
 
@@ -367,7 +513,7 @@ footer span{
 	}
 
 	.rightSide span{
-		font-size: 2.85rem;
+		font-size: 2.8rem;
 		margin-bottom: 5rem;
 	}
 
@@ -394,6 +540,47 @@ footer span{
 	nav ul li a{
 		font-size: 16px;
 	}
+
+	.secondSection{
+		margin-top: 1.7rem;
+	}
+
+	.secondSectionTitle{
+		margin: 1.7rem 0;
+		font-size: 2.6rem;
+	}
+
+	.articleText{
+		margin-top: 0.9rem;
+	}
+
+	.articleTextP{
+		font-size: 1rem;
+	}
+
+	.ulMain li{
+		font-size: 1.6rem;
+		margin: 2rem 0;
+	}
+
+	#featuresIcon{
+		font-size: 45px;
+	}
+
+	#c{
+		margin-top: 5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	#d{
+		width: 410px;
+		height: 540px;
+	}
+
+	#d img{
+		width: 410px;
+		height: 540px;
+	}
 }
 
 @media screen and (max-width: 883px){
@@ -418,6 +605,42 @@ footer span{
 
 	.h1Contact{
 		font-size: 2.2rem;
+	}
+
+	.secondSection{
+		margin-top: 1.5rem;
+	}
+
+	.secondSectionTitle{
+		font-size:2rem;
+	}
+
+	.articleText{
+		margin-top: 0.6rem;
+	}
+
+	.articleTextP{
+		font-size: 0.9rem;
+	}
+
+	.ulMain li{
+		font-size: 1.3rem;
+		margin: 1.6rem 0;
+	}
+
+	#featuresIcon{
+		font-size: 40px;
+		margin-right: 12px;
+	}
+
+	#d{
+		width: 373px;
+		height: 493px;
+	}
+
+	#d img{
+		width: 373px;
+		height: 493px;
 	}
 
 	form{
@@ -500,14 +723,54 @@ footer span{
 	  width: 160px;
   }
 
-  .hamburgerIcon{
-	  color:#F89734
-  }
-
-  .fas{
+  .fa-chevron-left{
 	  position: absolute;
 	  font-size: 32px;
 	  top: -23px;
+  }
+
+  .secondSection{
+	  margin-top: 1.2rem;
+  }
+
+  .secondSectionTitle{
+	  font-size: 1.7rem;
+	  margin: 1.2rem 0;
+  }
+
+  .articleText{
+	  margin-top: 0.4rem;
+  }
+
+  .articleTextP{
+	  font-size: 0.75rem;
+  }
+
+  .ulMain li{
+	  font-size: 1.2rem;
+	  margin: 1rem 0;
+  }
+  .ulMain li span{
+	  bottom: 7px;
+  }
+
+  #featuresIcon{
+	  font-size: 35px;
+  }
+
+  #c{
+	  margin-top: 5rem;
+	  margin-bottom: 0rem;
+  }
+
+  #d{
+	width: 310px;
+	height: 410px;
+  }
+
+  #d img{
+	width: 310px;
+	height: 410px;
   }
 
   .contact{
@@ -567,8 +830,50 @@ footer span{
 		font-size: 1rem;
 	}
 
-	.fas{
+	.fa-chevron-left{
 		font-size: 28px;
+	}
+
+	.secondSection{
+		margin-top: 0.5rem;
+	}
+
+	.secondSectionTitle{
+		font-size: 1.35rem;
+		margin: 0.7rem 0;
+	}
+
+	.articleText{
+		margin-top: 0.4rem;
+		width: 60%
+	}
+
+	.articleTextP{
+		font-size: 0.65rem;
+	}
+
+	.ulMain li{
+		font-size: 1rem;
+		margin: 0.7rem 0;
+	}
+
+	#featuresIcon{
+		font-size: 30px;
+		margin-right: 10px;
+	}
+
+	#c{
+		margin-top: 5rem;
+	}
+
+	#d{
+		width: 233px;
+		height: 308px;
+	}
+
+	#d img{
+		width: 233px;
+		height: 308px;
 	}
 
 	.contact{
@@ -612,6 +917,62 @@ footer span{
 
 	.leftSide img{
 		width: 200px;
+	}
+
+	.secondSectionTitle{
+		font-size: 1rem;
+		margin: 0.5rem 0;
+	}
+
+	.articleText{
+		width: 65%;
+	}
+
+	.articleTextP{
+		font-size: 0.4rem;
+	}
+
+	.ulMain li{
+		font-size: 0.6rem;
+		margin: 0.4rem 0;
+	}
+
+	.ulMain li span{
+		bottom: 3px;
+	}
+
+	#featuresIcon{
+		font-size: 20px;
+		margin-right: 9px;
+	}
+
+	#c{
+		margin-top: 3rem;
+	}
+
+	#d{
+		width: 130px;
+		height: 170px;
+	}
+
+	#d img{
+		width: 130px;
+		height: 170px;
+	}
+
+	form input{
+		height: 15px;
+		padding: 9px 6px;
+		margin-right: 0.6rem;
+	}
+
+	input::placeholder{
+		font-size: 8px;
+	}
+
+	form button{
+		padding: 5px 9px;
+		font-size: 9px;
 	}
 
 }
