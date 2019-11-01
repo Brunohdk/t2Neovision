@@ -61,42 +61,31 @@
         e.preventDefault()
         
         let data = {};
+        let url = 'https://85k7bv04na.execute-api.us-east-1.amazonaws.com/dev/register';
+        
         for(let i=0; i < formInputsEl.length;i++){
             let input = form[i];
             data[input.name] = input.value;
         }
-
-        console.log(data)
-        console.log(JSON.stringify(data))
-        formEl.reset()
-
         
+        let json = (JSON.stringify(data));
         
-                /* 'Content-Type': 'application/json',
-                'Authorization': 'hdk.bruno@gmail.com' */
-            });
-
-    /* JSON POST */
-
-}(window, document))
-            /* e.preventDefault();
-    
-            let toJson = {
-                Name: inputName.value,
-                Email: inputEmail.value
-            }
-            let json = JSON.stringify(toJson);
-            
-            let xml = new XMLHttpRequest();
-            xml.open('POST', 'http://localhost:3000/user');
+        let xml = new XMLHttpRequest();
+            xml.open('POST', url);
             xml.setRequestHeader('Content-Type', 'application/json');
             xml.setRequestHeader('Authorization', 'hdk.bruno@gmail.com');
             xml.send(json);
             console.log('Enviando...')
     
             form.reset();
+
             xml.onreadystatechange = () => {
                 
                 if(xml.onreadystatechange === 4)
                     console.log('Enviado com sucesso', xml.responseText);
-            } */
+            }
+        });
+
+    /* JSON POST */
+
+}(window, document))
