@@ -77,13 +77,13 @@
             xml.send(json);
             console.log('Enviando...')
     
-            form.reset();
-
+            
             xml.onreadystatechange = () => {
                 
-                if(xml.onreadystatechange === 4)
-                    console.log('Enviado com sucesso', xml.responseText);
+                if(xml.onreadystatechange === 4 && xhr.status === 200)
+                console.log('Enviado com sucesso', xml.responseText);
             }
+            form.reset();
         });
 
     /* JSON POST */
