@@ -77,6 +77,10 @@ nav{
 	top: -8px;
 }
 
+.hamburgerIcon{
+	color: red;
+}
+
 nav ul{
 	display: flex;
 	padding-top: 2rem;
@@ -106,7 +110,7 @@ nav ul li a{
 	position: relative;
 	letter-spacing: 0.7px;
 	font-weight: 500;
-	font-size: 17px;
+	font-size: 19px;
 }
 
 nav ul li a:last-child{
@@ -204,8 +208,9 @@ section{
 }
 
 main{
-	background-image: url('../img/curva.svg') ;
+	background-image: url('../img/layout/wavyBackground.svg');
 	background-size: 100%;
+	width: 100%;
 }
 
 .secondSection{
@@ -217,25 +222,32 @@ main{
 .secondSectionTitle{
 	margin: 2rem 0;
 	color: #F89734;
-	font-size: 34px;
+	font-size: 43px;
 	font-weight: 650;
 	line-height: 1px;
 }
 
-.secondSectionImg{
-	display: flex;
-	width: 100%;
-	height: 100%;
-	
+#secondSectionImgDiv{
+	position: relative;
 }
+
 
 .articleText{
 	width: 45%;
 	margin: 1rem;
 }
 
+.articleTextP{
+	font-size: 25px;
+}
+
 .ulMain{
-	margin-top:5rem;
+	margin-top:15rem;
+}
+
+.ulMain li{
+	font-size: 35px;
+	margin: 120px 0;
 }
 
 .contact{
@@ -299,6 +311,21 @@ footer span{
 	align-items: flex-end;
 	width: 1070px;
 	height: auto;
+}
+
+@media screen and (max-width: 1654px){
+
+	.rightSide h1{
+		font-size: 2.9rem;
+	}
+
+	.rightSide span{
+		font-size: 5rem;
+	}
+
+	.leftSide img {
+		width: 780px
+	}
 }
 
 @media screen and (max-width: 1500px){
@@ -365,8 +392,7 @@ footer span{
 	}
 
 	nav ul li a{
-		font-size: 14px;
-		font-weight: 400;
+		font-size: 16px;
 	}
 }
 
@@ -383,6 +409,39 @@ footer span{
 
 	.leftSide img{
 		width: 400px;
+	}
+
+
+	.contact{
+		padding: 1.7rem 0;
+	}
+
+	.h1Contact{
+		font-size: 2.2rem;
+	}
+
+	form{
+		margin: 12px 0;
+	}
+
+	form input{
+		height: 30px;
+		padding: 24px 18px;
+		margin-right: 1.1rem;
+		width: 32%;
+	}
+
+	input::placeholder{
+		font-size: 17px;
+	}
+
+	form button{
+		padding: 16px 22px;
+		font-size: 15px;
+	}
+
+	footer{
+		padding: 1.8rem;
 	}
 }
 	
@@ -402,7 +461,8 @@ footer span{
 	}
 
 	.menu-toggle{
-		display: block;
+		display: flex;
+		margin-bottom: 40px;
 	}
 
 	nav{
@@ -443,6 +503,40 @@ footer span{
   .hamburgerIcon{
 	  color:#F89734
   }
+
+  .fas{
+	  position: absolute;
+	  font-size: 32px;
+	  top: -23px;
+  }
+
+  .contact{
+		padding: 1.1rem 0;
+	}
+
+	.h1Contact{
+		font-size: 1.6rem;
+	}
+
+	form input{
+		height: 25px;
+		padding: 20px 15px;
+		margin-right: 1rem;
+		width: 30%;
+	}
+
+	input::placeholder{
+		font-size: 14px;
+	}
+
+	form button{
+		padding: 13px 19px;
+		font-size: 12px;
+	}
+
+	footer{
+		padding: 1.2rem;
+	}
   
 }
 
@@ -472,6 +566,37 @@ footer span{
 	nav ul li a{
 		font-size: 1rem;
 	}
+
+	.fas{
+		font-size: 28px;
+	}
+
+	.contact{
+		padding: 0.7rem;
+	}
+
+	.h1Contact{
+		font-size: 1rem;
+	}
+
+	form input{
+		height: 20px;
+		padding: 14px 9px;
+		margin-right: 0.8rem;
+	}
+
+	form button{
+		padding: 7px 13px;
+		font-size: 12px;
+	}
+
+	footer{
+		padding: 1.1rem;
+	}
+
+	footer span{
+		font-size: 0.7rem;
+	}
 }
 
 @media only screen and (max-width : 480px) {
@@ -488,4 +613,5 @@ footer span{
 	.leftSide img{
 		width: 200px;
 	}
+
 }
