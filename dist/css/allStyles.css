@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+
 html{
 	font-family: "Roboto Cn", sans-serif;
 }
@@ -177,6 +178,13 @@ section{
 	margin-top: 28px;
 }
 
+.leftSide img {
+	display: flex;
+	align-items: flex-end;
+	width: 1070px;
+	height: auto;
+}
+
 .rightSide{
 	display: flex;
 	flex-direction: column;
@@ -229,20 +237,12 @@ main{
 }
 
 
-#a{
-
-}
-
-#b{
-
-}
-
-#c{
+#divMainUl{
 	margin-top: 13rem;
 	margin-bottom: 5rem;
 }
 
-#d{
+#divHands{
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
@@ -250,10 +250,9 @@ main{
 	height: 1070px;
 }
 
-#d img{
-	right: 0;
-	width: 810px;
-	height: 1070px;
+#divHands img{
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -342,12 +341,6 @@ footer span{
 }
 
 
-.leftSide img {
-	display: flex;
-	align-items: flex-end;
-	width: 1070px;
-	height: auto;
-}
 
 @media screen and (max-width: 1654px){
 
@@ -380,18 +373,18 @@ footer span{
 		margin: 3rem 0;
 	}
 
-	#c{
+	#divMainUl{
 		margin-top: 12.5rem;
 	}
 
-	#d{
+	#divHands{
 		width: 745px;
 		height: 983px;
 	}
 
-	#d img{
-		width: 745px;
-		height: 983px;
+	#divHands img{
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -431,19 +424,19 @@ footer span{
 		font-size: 60px;
 	}
 
-	#c{
+	#divMainUl{
 		margin-top: 8rem;
 		margin-bottom: 1rem;
 	}
 
-	#d{
+	#divHands{
 		width: 600px;
 		height: 792px;
 	}
 
-	#d img{
-		width: 600px;
-		height: 792px;
+	#divHands img{
+		width: 100%;
+		height: 100%;
 	}
 
 }
@@ -489,19 +482,19 @@ footer span{
 		font-size: 35px;
 	}
 
-	#c{
+	#divMainUl{
 		margin-top: 5.5rem;
 		margin-bottom: 0rem;
 	}
 
-	#d{
+	#divHands{
 		width: 480px;
 		height: 633px;
 	}
 
-	#d img{
-		width: 480px;
-		height: 633px;
+	#divHands img{
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -567,19 +560,19 @@ footer span{
 		font-size: 45px;
 	}
 
-	#c{
+	#divMainUl{
 		margin-top: 5rem;
 		margin-bottom: 0.5rem;
 	}
 
-	#d{
+	#divHands{
 		width: 410px;
 		height: 540px;
 	}
 
-	#d img{
-		width: 410px;
-		height: 540px;
+	#divHands img{
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -633,12 +626,12 @@ footer span{
 		margin-right: 12px;
 	}
 
-	#d{
+	#divHands{
 		width: 373px;
 		height: 493px;
 	}
 
-	#d img{
+	#divHands img{
 		width: 373px;
 		height: 493px;
 	}
@@ -758,19 +751,19 @@ footer span{
 	  font-size: 35px;
   }
 
-  #c{
+  #divMainUl{
 	  margin-top: 5rem;
 	  margin-bottom: 0rem;
   }
 
-  #d{
+  #divHands{
 	width: 310px;
 	height: 410px;
   }
 
-  #d img{
-	width: 310px;
-	height: 410px;
+  #divHands img{
+	width: 100%;
+	height: 100%;
   }
 
   .contact{
@@ -862,18 +855,18 @@ footer span{
 		margin-right: 10px;
 	}
 
-	#c{
+	#divMainUl{
 		margin-top: 5rem;
 	}
 
-	#d{
+	#divHands{
 		width: 233px;
 		height: 308px;
 	}
 
-	#d img{
-		width: 233px;
-		height: 308px;
+	#divHands img{
+		width: 100%;
+		height: 100%;
 	}
 
 	.contact{
@@ -946,18 +939,18 @@ footer span{
 		margin-right: 9px;
 	}
 
-	#c{
+	#divMainUl{
 		margin-top: 3rem;
 	}
 
-	#d{
-		width: 130px;
-		height: 170px;
+	#divHands{
+		width: 100%;
+		height: 100%;
 	}
 
-	#d img{
-		width: 130px;
-		height: 170px;
+	#divHands img{
+		width: 100%;
+		height: 100%;
 	}
 
 	form input{

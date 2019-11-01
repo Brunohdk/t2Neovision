@@ -31,6 +31,8 @@
         }
     });
 
+    /* TOGGLE NAVBAR */
+
     function scrollToContact(e){
 
         e.preventDefault();
@@ -49,13 +51,10 @@
         FeaturesEl.scrollIntoView({behavior: "smooth"});
     }
 
-
     contactButton.addEventListener('click', scrollToContact);
-
     featuresButton.addEventListener('click', scrollToFeatures);
 
-
-    
+    /* SCROLL TO ELEMENT */
     
     formEl.addEventListener('submit', function(e) {
 
@@ -69,12 +68,15 @@
 
         console.log(data)
         console.log(JSON.stringify(data))
+        formEl.reset()
 
         
         
                 /* 'Content-Type': 'application/json',
                 'Authorization': 'hdk.bruno@gmail.com' */
             });
+
+    /* JSON POST */
 
 }(window, document))
             /* e.preventDefault();
